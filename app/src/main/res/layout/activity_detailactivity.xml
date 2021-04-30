@@ -4,33 +4,106 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
+    android:background="#6FC8E6"
     android:orientation="vertical"
     tools:context=".detailactivity">
 
     <ImageView
         android:id="@+id/imp"
-        android:layout_width="400dp"
-        android:layout_height="250dp"
+        android:layout_width="280dp"
+        android:layout_height="150dp"
         android:layout_marginTop="80dp"
-        app:srcCompat="@drawable/maham" />
+        app:srcCompat="@drawable/bhai" />
 
     <TextView
         android:id="@+id/tvname2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/tvsurname2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
         android:text="TextView" />
 
     <EditText
         android:id="@+id/etNo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
         android:ems="10"
+        android:background="@drawable/textdesign"
         android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/tvsurname2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/textdesign"/>
+
+    <TextView
+        android:id="@+id/tvAdress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/textdesign"/>
+
+    <TextView
+        android:id="@+id/tvDateofbirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/textdesign"
+        android:textColor="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/imvideo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/design"
+            app:srcCompat="@drawable/videocam" />
+
+        <ImageButton
+            android:id="@+id/imedit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/design"
+            app:srcCompat="@drawable/edit" />
+
+        <ImageButton
+            android:id="@+id/imCall"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/design"
+            android:text="edit"
+            app:srcCompat="@drawable/call" />
+
+        <ImageView
+            android:id="@+id/imback"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/design"
+            app:srcCompat="@drawable/back" />
+    </RelativeLayout>
+
 </LinearLayout>

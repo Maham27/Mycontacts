@@ -4,21 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
     android:orientation="vertical"
+    android:background="#6FC8E6"
     tools:context=".MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="90dp">
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="50dp"
-                android:layout_height="70dp"
-                android:layout_marginTop="10dp"
-                app:srcCompat="@drawable/maham"
-                />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/maham" />
+
         <TextView
             android:id="@+id/Tvname"
             android:layout_width="wrap_content"
@@ -30,15 +30,6 @@
             android:textSize="20dp"
             android:textStyle="bold" />
 
-        <ImageButton
-            android:id="@+id/btnadd"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="290dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/design"
-            android:src="@drawable/edit"
-            android:text="edit" />
     </RelativeLayout>
 
 
@@ -50,8 +41,8 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:background="@color/white"
-        android:padding="15dp"
         android:drawableLeft="@drawable/search"
+        android:padding="15dp"
         android:text="              search" />
 
     <TextView
@@ -64,9 +55,20 @@
         android:textSize="15sp"
         android:textStyle="bold" />
 
+    <ImageButton
+        android:id="@+id/btnadd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="290dp"
+        android:background="@drawable/design"
+        android:src="@drawable/add"
+        android:text="edit" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>

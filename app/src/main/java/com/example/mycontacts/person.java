@@ -4,18 +4,23 @@ import androidx.annotation.NonNull;
 
 public class person {
     String name;
-    String surname;
+    String email;
     String preference;
     String no;
+    String adress;
+    String dateofbirth;
+
 
     public person() {
     }
 
-    public person(String name,String surname,String preference,String no) {
+    public person(String name,String email,String preference,String no,String dateofbirth,String adress) {
         this.name = name;
-        this.surname=surname;
+        this.email=email;
         this.preference=preference;
         this.no=no;
+        this.dateofbirth=dateofbirth;
+        this.adress=adress;
     }
 
     public String getNo() {
@@ -34,14 +39,6 @@ public class person {
         this.name = name;
     }
 
-    public String getSurname() {
-        return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
     public String getPreference() {
         return preference;
     }
@@ -50,13 +47,39 @@ public class person {
         this.preference = preference;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getAdress() {
+        return adress;
+    }
+
+    public void setAdress(String adress) {
+        this.adress = adress;
+    }
+
+    public String getDateofbirth() {
+        return dateofbirth;
+    }
+
+    public void setDateofbirth(String dateofbirth) {
+        this.dateofbirth = dateofbirth;
+    }
+
     @Override
     public String toString() {
         return "person{" +
                 "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
+                ", email='" + email + '\'' +
                 ", preference='" + preference + '\'' +
                 ", no='" + no + '\'' +
+                ", adress='" + adress + '\'' +
+                ", dateofbirth='" + dateofbirth + '\'' +
                 '}';
     }
 }

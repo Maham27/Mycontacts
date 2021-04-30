@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#6FC8E6"
+    tools:context=".addperson">
+
+    <ImageView
+        android:id="@+id/ivp"
+        android:layout_width="280dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/bhai" />
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/textdesign"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="enter name" />
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/textdesign"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="enter email" />
+
+    <EditText
+        android:id="@+id/etnum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/textdesign"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="enter number"/>
+
+    <EditText
+        android:id="@+id/etdob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/textdesign"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="enter date of birth" />
+
+    <EditText
+        android:id="@+id/etadress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/textdesign"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="enter adress" />
+
+
+        <ImageView
+            android:id="@+id/imBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/design"
+            app:srcCompat="@drawable/back" />
+
+
+</LinearLayout>
